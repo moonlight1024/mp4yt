@@ -6,8 +6,7 @@
 	"compatibility_flags": ["global_fetch_strictly_public"],
 	"workers_dev": true,
 	"routes": [
-		{ "pattern": "mp4yt.com/*", "zone_name": "mp4yt.com" },
-		{ "pattern": "www.mp4yt.com/*", "zone_name": "mp4yt.com" }
+		{ "pattern": "misshu.cc.cd", "custom_domain": true }
 	],
 	"assets": {
 		"directory": "./dist",
