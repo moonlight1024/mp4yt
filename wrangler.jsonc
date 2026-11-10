@@ -6,7 +6,7 @@
 	"compatibility_flags": ["global_fetch_strictly_public"],
 	"workers_dev": true,
 	"routes": [
-		{ "pattern": "misshu.cc.cd", "custom_domain": true }
+		{ "pattern": "video-parse.misshu.cc.cd", "custom_domain": true }
 	],
 	"assets": {
 		"directory": "./dist",
