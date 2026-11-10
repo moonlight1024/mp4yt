@@ -168,6 +168,11 @@ function buildOgHtml(title, thumbnail, description, videoUrl, siteUrl) {
 </html>`;
 }
 
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    const pathname = url.pathname;
+
     // ── Note: /api/extract is now handled by the Node.js backend.
 
 
@@ -244,3 +249,5 @@ function buildOgHtml(title, thumbnail, description, videoUrl, siteUrl) {
       console.error(`[Worker] Error fetching asset:`, err.message);
       return withSecurityHeaders(new Response('Something went wrong. Please try again.', { status: 500 }));
     };
+  }
+};
